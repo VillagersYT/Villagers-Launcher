@@ -1,7 +1,7 @@
 {
     "name": "hetonia-launcher",
     "preductname": "Hetonia Launcher",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Launcher Mincraft custom (crack, premium)",
     "main": "src/app.js",
     "author": "Funasitien",
