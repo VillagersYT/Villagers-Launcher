@@ -1,11 +1,11 @@
 {
-    "name": "hetonia-launcher",
-    "preductname": "Hetonia Launcher",
-    "version": "0.1.2",
-    "description": "Launcher Mincraft custom (crack, premium)",
+    "name": "villagers-launcher",
+    "preductname": "Villagers Launcher",
+    "version": "1.0.0",
+    "description": "Launcher Minecraft de Villagers pour les évènements ou autres",
     "main": "src/app.js",
-    "author": "Funasitien",
-    "url": "http://launcher.hetonia.fr",
+    "author": "VillagersYT",
+    "url": "https://launcher.hitopia.org",
     "engines": {
         "node": ">18.x.x"
     },
@@ -34,6 +34,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/DreamCloud-Development/Hetonia-Launcher.git"
+        "url": "git+https://github.com/VillagersYT/Villagers-Launcher.git"
     }
 }

@@ -22,7 +22,7 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Hétonia c'est cool", "author": "LeLapin" }
+            { "message": "Villagers est le meilleur", "author": "La communauté (bien sur)" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -42,12 +42,12 @@ class Splash {
 
     async checkUpdate() {
         if (dev) return this.startLauncher();
-        this.setStatus(`recherche de mise à jour...`);
+        this.setStatus(`Recherche de mise à jour...`);
 
         ipcRenderer.invoke('update-app').then(err => {
             if (err.error) {
                 let error = err.message;
-                this.shutdown(`erreur lors de la recherche de mise à jour :<br>${error}`);
+                this.shutdown(`Erreur lors de la recherche de mise à jour :<br>${error}`);
             }
         })
 
@@ -83,10 +83,10 @@ class Splash {
     }
 
     shutdown(text) {
-        this.setStatus(`${text}<br>Arrêt dans 5s`);
+        this.setStatus(`${text}<br>Arrêt dans 5 secondes`);
         let i = 4;
         setInterval(() => {
-            this.setStatus(`${text}<br>Arrêt dans ${i--}s`);
+            this.setStatus(`${text}<br>Arrêt dans ${i--} seconde(s)`);
             if (i < 0) ipcRenderer.send('update-window-close');
         }, 1000);
     }

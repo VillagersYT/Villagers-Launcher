@@ -54,9 +54,9 @@ class Index {
                 }
             }
         }).then(() => {
-            console.log('le build est terminé')
+            console.log('Le build est terminé !')
         }).catch(err => {
-            console.error('Error during build!', err)
+            console.error('Erreur en faisant le build !', err)
         })
     }
 
@@ -70,7 +70,7 @@ class Index {
             fs.writeFileSync("src/assets/images/icon.ico", png2icons.createICO(Buffer, png2icons.HERMITE, 0, false));
             fs.writeFileSync("src/assets/images/icon.png", Buffer);
         } else {
-            console.log('connection error')
+            console.log('Erreur de connexion')
         }
     }
 }

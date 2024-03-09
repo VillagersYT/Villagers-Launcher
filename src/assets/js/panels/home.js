@@ -1,8 +1,3 @@
-/**
- * @author Luuxis
- * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
- */
-
 'use strict';
 
 import { logger, database, changePanel } from '../utils.js';
@@ -74,7 +69,7 @@ class Home {
             blockNews.innerHTML = `
                 <div class="news-header">
                     <div class="header-text">
-                        <div class="title">Error.</div>
+                        <div class="title">Erreur.</div>
                     </div>
                 </div>
                 <div class="news-content">
