@@ -70,7 +70,7 @@ class Index {
             fs.writeFileSync("src/assets/images/icon.ico", png2icons.createICO(Buffer, png2icons.HERMITE, 0, false));
             fs.writeFileSync("src/assets/images/icon.png", Buffer);
         } else {
-            console.log('Erreur de connexion')
+            console.log('Erreur de connexion !')
         }
     }
 }
